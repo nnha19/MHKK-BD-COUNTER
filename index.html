@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>MHKK Birhday Counter</title>
+  </head>
+  <body>
+    <section class="counter-wrapper">
+      <audio id="audio" controls loop>
+        <source src="./audio/MP3-MUSIC (1).mp3" type="audio/ogg" />
+        <source src="./audio//MP3-MUSIC (1).mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="counter">
+        <div class="days container">
+          <span id="day" class="countdown">43</span>
+          <span class="text">DAYS</span>
+        </div>
+        <div class="hours container">
+          <span id="hour" class="countdown">04</span>
+          <span class="hours-text">HOURS</span>
+        </div>
+        <div class="mins container">
+          <span id="minute" class="countdown">22</span>
+          <span class="text">MINS</span>
+        </div>
+        <div class="secs container">
+          <span id="second" class="countdown">22</span>
+          <span class="text">SECS</span>
+        </div>
+      </div>
+      <h4 class="text2">
+        <div id="before">Before</div>
+        <div class="linear-wipe" id="name">Myat Hsu Ko Ko</div>
+        <span id="age">21</span> Birthday
+      </h4>
+    </section>
+    <section class="birthday">
+      <section class="fireworks">
+        <canvas id="c"></canvas>
+      </section>
+      <section class="birthday-card">
+        <div class="card">
+          <div class="back"></div>
+          <div class="front">
+            <div class="imgset">
+              <img
+                width="100%"
+                src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png"
+              />
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Happy Birthday MHKK</p>
+            <p>Write whatever you want to write here.</p>
+          </div>
+        </div>
+      </section>
+      <section class="wishes">My Wishes</section>
+      <section class="play">
+        <h2>Wanna play with my heart? Go ahead.</h2>
+        <div class="game-score">
+          <p class="timer-container">Timer : <span id="timer">60</span></p>
+          <p>Score : <span id="score">0</span></p>
+        </div>
+        <div class="board"></div>
+      </section>
+    </section>
+    <footer class="footer">Created on Aug 3, 2021</footer>
+    <script src="bdcard.js"></script>
+    <script src="bd-display.js"></script>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery.fireworks.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
